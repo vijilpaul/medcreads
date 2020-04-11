@@ -1,0 +1,14 @@
+<header class="fluid">
+    <div class="header__wrap" *ngFor="let list of headerData">
+        <div class="logo"><a href="/"><img src="../../../assets/images/logo.png" alt="logo"></a></div>
+        <div class="nav-section">
+            <app-nav [navDetails] = "list.nav"></app-nav>
+        </div>
+        <div class="profileSec" *ngFor="let item of list.profile">
+            <div class="profileSec__img">
+                <img src="../../../assets/images/{{item.prifileImg}}" alt="">
+            </div>
+            <h6 class="profileSec__name">{{item.profileName}}</h6>
+        </div>
+    </div>
+</header>

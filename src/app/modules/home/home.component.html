@@ -1,0 +1,17 @@
+<section *ngFor="let list of honeData" class="fluid">
+    <div *ngFor="let item of list.banner">
+        <app-page-title-description title = "{{item.title}}" description = "{{item.description}}"></app-page-title-description>
+    </div>
+    <div class="home">
+        <div class="home__side">
+            <app-profile [profileDetails] = "list.profile"></app-profile>
+        </div>
+        <div class="home__tabSec">
+            <app-tabs [tabDetails] = "list.tabs"></app-tabs>
+            <div class="home__btnSec">
+                <button mat-stroked-button class="home__btn home__btn--green">Approve</button>
+                <button mat-stroked-button class="home__btn">Reject</button>
+            </div>
+        </div>
+    </div>
+</section>

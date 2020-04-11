@@ -1,0 +1,14 @@
+
+<section  class="mainTabs">
+    <mat-tab-group>
+        <div *ngFor="let item of tabDetails">
+            <mat-tab class="tab-title" label="{{item.name}}"> 
+                <div class="tabDetails">
+                    <ul class="tabDetails__list">
+                        <li *ngFor="let list of item.data"><span class="tab-para">{{list.cerificateName}}</span><span><a href="{{list.link}}" class="tabDetails__view">View</a></span></li>
+                    </ul>
+                </div>
+            </mat-tab>
+        </div>
+    </mat-tab-group>
+</section>

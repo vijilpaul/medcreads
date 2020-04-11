@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables";
+.profile{
+    &__img{
+        padding-bottom: 3rem;
+    }
+    &__fullrow{
+        width: 100%;
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    &__halfrow{
+        width: 50%;
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    &-label{
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+    &__email{
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+        &:after{
+            background: $app-secondary;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 25px;
+            height: 4px;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/variables";
+.mainTabs{
+    margin-top: -4rem;
+}
+.tabDetails{
+    margin: 2rem;
+    &__list{
+        li{
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #DDDFE1;
+            padding: 25px;
+            justify-content: space-between;
+        }
+    }
+    &__view{
+        color:$app-secondary;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

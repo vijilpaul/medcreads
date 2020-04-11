@@ -1,0 +1,30 @@
+<div class="profile" *ngFor="let list of profileDetails">
+    <div class="profile__img">
+        <img src="../../../../assets/images/{{list.profileImg}}" alt="{{list.name}}">
+    </div>
+    <div class="profile__description">
+        <div class="profile__fullrow">
+            <label class="profile-label profile__email">{{list.email}}</label>
+        </div>
+        <div class="profile__halfrow">
+            <label class="profile-label">Name</label>
+            <span class="profile-data">{{list.name}}</span>
+        </div>
+        <div class="profile__halfrow">
+            <label class="profile-label">NPI</label>
+            <span class="profile-data">{{list.npi}}</span>
+        </div>
+        <div class="profile__halfrow">
+            <label class="profile-label">State</label>
+            <span class="profile-data">{{list.state}}</span>
+        </div>
+        <div class="profile__halfrow">
+            <label class="profile-label">License</label>
+            <span class="profile-data">{{list.license}}</span>
+        </div>
+        <div class="profile__halfrow">
+            <label class="profile-label">Mobile</label>
+            <span class="profile-data">{{list.mob}}</span>
+        </div>
+    </div>
+</div>
