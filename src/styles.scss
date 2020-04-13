@@ -1,0 +1,154 @@
+@import "./assets/styles/variables";
+
+*:focus {
+  outline: 0 none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: $ff;
+  background: $white;
+  color: $app-primary;
+  scroll-behavior: smooth;
+  main {
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background: url('./assets/images/blue-bg.svg') no-repeat top center;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style-type: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.fluid {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    @media screen and (min-width: 768px) {
+        padding-left: 8% !important;
+        padding-right: 8% !important;
+    }
+}
+
+// text styles
+h1.title {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    color: $white;
+}
+.nav-text{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+}
+h4.sub-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 60px;
+    color: $app-secondary;
+}
+.tab-title{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $tab-text;
+    background: $tab-bg;
+}
+.tab-para{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: $app-primary;
+}
+.mat-tab-label{
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $app-primary;
+  height: auto !important;
+  margin-right: 10px;
+  background: $tab-bg;
+  padding: 21px 40px !important;
+  opacity: 1 !important;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 0;
+  &.mat-tab-label-active{
+    background: #F9F9F9;
+    border-bottom: 0;
+    color: $app-blue;
+    font-weight: bold;
+  }
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: none;
+}
+.mat-tab-header{
+  border: 0
+}
+.profile-label{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $app-primary;
+}
+.profile-data{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $app-primary;
+}
+a.view, .view{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+.footer-text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $app-primary;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.commonWrap{
+  display: flex;
+  margin: 3rem 0;
+  background: $white;
+  padding: 3rem;
+  min-height: 100vh;
+}
